@@ -1773,19 +1773,36 @@ h6 {
   font-size: 13px;
   color: #ddd;
 }
-/* Remove grey horizontal line after Ticket Tailor widget */
-.tt-widget + hr,
-.tt-widget + * {
-  border: none !important;
-  box-shadow: none !important;
-  margin: 0 !important;
-  padding: 0 !important;
-}
-
+/* Stronger, more specific reset for lines beneath the widget */
 .section-header {
   border-bottom: none !important;
+  padding-bottom: 0 !important;
+  margin-bottom: 0 !important;
 }
 
-.section-header::after {
+.section-header .tt-widget {
+  margin-bottom: 0 !important;
+}
+
+/* Target any immediate sibling elements (including pseudo‑elements) */
+.tt-widget + *, 
+.tt-widget + *::before, 
+.tt-widget + *::after {
+  border: none !important;
+  box-shadow: none !important;
+  background: transparent !important;
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+/* Expand to hide any hr tags near widget */
+.section-header hr {
+  display: none !important;
+}
+
+/* If your theme injects hr-like rules via pseudo-elements */
+.section-header::after,
+.section-header::before {
   content: none !important;
 }
+
