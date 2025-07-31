@@ -1773,3 +1773,19 @@ h6 {
   font-size: 13px;
   color: #ddd;
 }
+/* Remove grey horizontal line after Ticket Tailor widget */
+.tt-widget + hr,
+.tt-widget + * {
+  border: none !important;
+  box-shadow: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.section-header {
+  border-bottom: none !important;
+}
+
+.section-header::after {
+  content: none !important;
+}
