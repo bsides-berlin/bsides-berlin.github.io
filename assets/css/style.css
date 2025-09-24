@@ -1811,4 +1811,8 @@ h6 {
   height: 200px;
   object-fit: cover;  /* crops edges instead of stretching */
 }
-
+#speakers .speaker img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
