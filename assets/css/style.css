@@ -1804,12 +1804,7 @@ h6 {
 .section-header::after,
 .section-header::before {
   content: none !important;
-}
-/* Force all speaker images to be the same size */
-.speakers img {
-  width: 200px;       /* adjust as needed */
-  height: 200px;
-  object-fit: cover;  /* crops edges instead of stretching */
+
 }
 #speakers .speaker img {
     width: 200px;
