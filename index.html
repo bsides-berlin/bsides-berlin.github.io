@@ -280,7 +280,7 @@
             <div class="row schedule-item">
               <div class="col-md-2"><time>10:50 - 11:30</time></div>
               <div class="col-md-10">
-                <h4>Sneaky Remap - Shared Object Cloaking with a Minimum of Fuss<span>Stuart McMurray</span></h4>
+                <h4>Sneaky Remap - Shared Object Cloaking with a Minimum of Fuss<span> Stuart McMurray</span></h4>
                 <p>This talk describes sneaky remap, a technique for hiding a loaded shared object file on Linux.  It starts with the context surrounding shared object loading during operations on Linux Targets but the bulk of the talk revolves around sneaky remap's nuts and bolts.</p>
               </div>
             </div>
@@ -296,17 +296,17 @@
               <div class="col-md-2"><time>12:00 - 12:30</time></div>
               <div class="col-md-10">
                 <h4>Weaponizing Image Scaling Against Production AI Systems<span> Kikimora Morozova</span></h4>
-                <p>AI vision systems see differently than humans do. When platforms downscale uploads to save compute, the mathematical properties of interpolation algorithms create exploitable artifacts. In this presentation, we'll show how to craft images which use invisible pixel perturbations to reveal malicious prompts after downscaling, triggering unauthorized tool execution across Google Gemini, Vertex AI, Google Assistant, and Genspark.<p> 
-                <p>Beyond image downscaling, we’ll explore the broader attack surface, including audio transformations, dithering algorithms, and other preprocessing steps that become prompt injection vectors. You'll learn to fingerprint vulnerable systems using test patterns that reveal specific downscaling implementations across ML libraries. We'll demo Anamorpher, our open-source tool for automated attack generation, with both Python APIs and visual interfaces, as well as examine practical mitigations from displaying actual processed images to implementing design patterns resistant to prompt injection, such as the action selector pattern.</div>
+                <p>AI vision systems see differently than humans do. When platforms downscale uploads to save compute, the mathematical properties of interpolation algorithms create exploitable artifacts. In this presentation, we'll show how to craft images which use invisible pixel perturbations to reveal malicious prompts after downscaling, triggering unauthorized tool execution across Google Gemini, Vertex AI, Google Assistant, and Genspark.<p> <p>
+                Beyond image downscaling, we’ll explore the broader attack surface, including audio transformations, dithering algorithms, and other preprocessing steps that become prompt injection vectors. You'll learn to fingerprint vulnerable systems using test patterns that reveal specific downscaling implementations across ML libraries. We'll demo Anamorpher, our open-source tool for automated attack generation, with both Python APIs and visual interfaces, as well as examine practical mitigations from displaying actual processed images to implementing design patterns resistant to prompt injection, such as the action selector pattern.</div>
             </div>
 
             <div class="row schedule-item">
               <div class="col-md-2"><time>12:30 - 13:10</time></div>
               <div class="col-md-10">
                 <h4>A Deep Dive into Model Context Protocol (MCP) Security<span> Anshu Gupta</span></h4>
-                <p>As organizations rapidly adopt Large Language Models (LLMs) to power enterprise applications, ensuring the security of context-driven interactions has become a critical challenge. The Model Context Protocol (MCP) is emerging as a standardized framework that governs how models are prompted, contextualized, and integrated into real-world workflows. While MCP enables richer, more adaptive use cases, it also introduces new and complex attack surfaces that require deliberate security strategies.<p>
+                <p>As organizations rapidly adopt Large Language Models (LLMs) to power enterprise applications, ensuring the security of context-driven interactions has become a critical challenge. The Model Context Protocol (MCP) is emerging as a standardized framework that governs how models are prompted, contextualized, and integrated into real-world workflows. While MCP enables richer, more adaptive use cases, it also introduces new and complex attack surfaces that require deliberate security strategies.<p><p>
 
-<p>This session provides a comprehensive exploration of MCP security, highlighting the unique risks and defenses associated with context-aware LLM deployments. We will examine threat vectors such as context injection, prompt leakage, chaining abuse, and data exfiltration through contextual inputs—issues that can compromise both system integrity and sensitive enterprise data. Participants will gain insight into adversarial use cases, including indirect prompt injection and model manipulation via context chaining, demonstrating how attackers can exploit seemingly benign contextual elements.<p>
+<p>This session provides a comprehensive exploration of MCP security, highlighting the unique risks and defenses associated with context-aware LLM deployments. We will examine threat vectors such as context injection, prompt leakage, chaining abuse, and data exfiltration through contextual inputs—issues that can compromise both system integrity and sensitive enterprise data. Participants will gain insight into adversarial use cases, including indirect prompt injection and model manipulation via context chaining, demonstrating how attackers can exploit seemingly benign contextual elements.<p><p>
 
 <p>In addition to identifying risks, the session will provide a practical roadmap for hardening MCP implementations across diverse environments, from proprietary in-house systems to API-based LLMs like OpenAI, Anthropic, and Cohere. Core strategies include input validation, sandboxing, establishing contextual trust boundaries, and embedding audit logging into MCP workflows. We will also discuss the role of prompt hygiene, red teaming, and continuous monitoring to build resilience against evolving threats.
 
@@ -325,7 +325,7 @@
               <div class="col-md-2"><time>14:30 - 15:00</time></div>
               <div class="col-md-10">
                 <h4>Linux Malware Packers and Loaders - A Comprehensive Analysis of Evasion Techniques and Detection Challenges<span> Massimo Bertocchi</span></h4>
-                <p>This presentation examines Linux malware packers and loaders as sophisticated evasion techniques that pose significant challenges to modern cybersecurity defenses. Malware packers compress, encrypt, and obfuscate executable code, while loaders execute the original malware directly in memory, enabling fileless execution that bypasses traditional detection mechanisms.<p>
+                <p>This presentation examines Linux malware packers and loaders as sophisticated evasion techniques that pose significant challenges to modern cybersecurity defenses. Malware packers compress, encrypt, and obfuscate executable code, while loaders execute the original malware directly in memory, enabling fileless execution that bypasses traditional detection mechanisms.<p><p>
                   <p>The research includes a case study of the Lazarus APT group's ThreatNeedle malware, demonstrating real-world implementation of multi-stage deployment with in-memory execution capabilities. A practical analysis of the hARMless ARM64 ELF packer/loader system illustrates key technical components including RC4 encryption, CRC32 integrity verification, and direct ARM64 syscall implementation. The presentation reveals critical security implications: traditional EDR solutions have significant detection gaps on Linux systems, static analysis proves insufficient against packed malware, and memory-based execution complicates forensic analysis. Defensive strategies require implementing syscall-level monitoring, deploying behavioral analysis capabilities, and maintaining comprehensive logging for effective threat detection and response.</p>
               </div>
             </div>
@@ -348,9 +348,9 @@
               <div class="col-md-2"><time>15:50 - 16:10</time></div>
               <div class="col-md-10">
                 <h4>Accidental Backdoors: Supply Chain Stories That Could Happen to You<span> Valeriy Shevchenko</span></h4>
-                <p>Even well-defended companies can be compromised through their supply chain. In my bug bounty experience, I discovered cases where third-party contractors—without malicious intent—introduced vulnerabilities that completely bypassed strong internal security. Misconfigured integrations, unsecured development environments, and overlooked vendor practices became unexpected entry points.<p>
+                <p>Even well-defended companies can be compromised through their supply chain. In my bug bounty experience, I discovered cases where third-party contractors—without malicious intent—introduced vulnerabilities that completely bypassed strong internal security. Misconfigured integrations, unsecured development environments, and overlooked vendor practices became unexpected entry points.<p><p>
 
-<p>This talk will share real-world stories of how unconventional approaches to vulnerability hunting uncovered hidden weaknesses in trusted partnerships. We’ll explore why organizations often fail to account for contractor security, and how those blind spots can lead to full system compromise.<p>
+<p>This talk will share real-world stories of how unconventional approaches to vulnerability hunting uncovered hidden weaknesses in trusted partnerships. We’ll explore why organizations often fail to account for contractor security, and how those blind spots can lead to full system compromise.<p><p>
 
 <p>Attendees will gain practical insights on recognizing supply chain risks, strengthening vendor oversight, and ensuring that external partners don’t become the weakest link in their security strategy.</p>
               </div>
@@ -376,9 +376,9 @@
               <div class="col-md-10">
                 <h4>Closing Keynote<span> o</span></h4>
                  <h4>AI for AppSec and Offensive Security: From Automation to Autonomy<span> Patrick Ventuzelo</span></h4>
-                <p>Artificial Intelligence is transforming the way we approach application security and offensive security — moving us from tool-based automation to the early stages of autonomous vulnerability research. From DARPA’s AIxCC challenge to emerging agent-based systems, AI is showing how fuzzing, auditing, and workflow orchestration can scale beyond what human teams alone can achieve.<p>
+                <p>Artificial Intelligence is transforming the way we approach application security and offensive security — moving us from tool-based automation to the early stages of autonomous vulnerability research. From DARPA’s AIxCC challenge to emerging agent-based systems, AI is showing how fuzzing, auditing, and workflow orchestration can scale beyond what human teams alone can achieve.<p><p>
 
-<p>This keynote will explore how AI is applied to code auditing, harness generation for fuzzing, and vulnerability triage, before introducing the new paradigm of multi-agent systems that act like a full red team. We’ll also examine the challenges of benchmarking and reproducibility in this space, and speculate on what comes next: specialized models, autonomous red teams, and community-driven marketplaces for sharing knowledge, agents, and workflows.<p>
+<p>This keynote will explore how AI is applied to code auditing, harness generation for fuzzing, and vulnerability triage, before introducing the new paradigm of multi-agent systems that act like a full red team. We’ll also examine the challenges of benchmarking and reproducibility in this space, and speculate on what comes next: specialized models, autonomous red teams, and community-driven marketplaces for sharing knowledge, agents, and workflows.<p><p>
 
 <p>The offensive security engineer of tomorrow won’t just run tools — they’ll orchestrate a team of AI collaborators.
                 
@@ -734,6 +734,7 @@
 </body>
 
 </html>
+
 
 
 
