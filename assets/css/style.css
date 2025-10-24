@@ -1806,8 +1806,13 @@ h6 {
   content: none !important;
 
 }
+/* === Uniform Speaker Images (Event Speakers Section) === */
 #speakers .speaker img {
-    width: 500px;
-    height: 500px;
-    object-fit: cover;
+  width: 100%;
+  height: 320px;          /* optimised for your 3-column grid */
+  object-fit: cover;      /* crops evenly without distortion */
+  object-position: center;
+  display: block;
+  border-radius: 8px;     /* matches your site's soft corner aesthetic */
 }
+
