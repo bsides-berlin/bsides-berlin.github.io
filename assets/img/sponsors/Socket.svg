@@ -1,16 +1,11 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 133" role="img" aria-label="Socket">
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="100" viewBox="0 0 300 100" role="img" aria-label="Socket">
   <defs>
-    <linearGradient id="shield-gradient" x1="1" y1="0" x2="0" y2="1">
+    <linearGradient id="sg" x1="1" y1="0" x2="0" y2="1">
       <stop offset="0%" stop-color="#FF3EDB"/>
       <stop offset="100%" stop-color="#7C3AED"/>
     </linearGradient>
   </defs>
-  <!-- Shield shape -->
-  <path d="M66.5 8 L18 28 L18 70 C18 96 40 116 66.5 125 C93 116 115 96 115 70 L115 28 Z"
-        fill="url(#shield-gradient)"/>
-  <!-- Lightning bolt -->
-  <polygon points="73,36 54,72 66,72 60,98 83,58 70,58" fill="white"/>
-  <!-- "Socket" text -->
-  <text x="130" y="85" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif"
-        font-size="62" font-weight="700" fill="#1a1a1a" letter-spacing="-1">Socket</text>
+  <path d="M50 6 L13.5 21 L13.5 52.5 C13.5 72 30 87 50 93.5 C70 87 86.5 72 86.5 52.5 L86.5 21 Z" fill="url(#sg)"/>
+  <polygon points="55,27 41,54 50,54 45,73 62,43.5 52,43.5" fill="white"/>
+  <text x="100" y="64" font-family="Helvetica Neue,Helvetica,Arial,sans-serif" font-size="46" font-weight="700" fill="#1a1a1a">Socket</text>
 </svg>
