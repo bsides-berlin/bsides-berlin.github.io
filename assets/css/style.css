@@ -1547,7 +1547,6 @@ h6 {
 @media (min-width: 768px) {
   #contact .contact-phone {
     border-left: 1px solid #ddd;
-    border-right: 1px solid #ddd;
   }
 }
 
