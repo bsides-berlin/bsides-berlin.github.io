@@ -1444,6 +1444,8 @@ h6 {
 
 #buy-tickets .card .card-price {
   font-size: 48px;
+  font-weight: 700;
+  color: #0e1b4d;
   margin: 0;
 }
 
