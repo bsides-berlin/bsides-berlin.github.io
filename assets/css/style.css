@@ -12,6 +12,7 @@ body {
   background: #fff;
   color: #2f3138;
   font-family: "Open Sans", sans-serif;
+  line-height: 1.75;
 }
 
 a {
@@ -41,9 +42,10 @@ h5,
 h6 {
   font-family: "Raleway", sans-serif;
   font-weight: 400;
-  margin: 0 0 20px 0;
+  margin: 0 0 16px 0;
   padding: 0;
   color: #0e1b4d;
+  letter-spacing: 0.3px;
 }
 
 .main-page {
@@ -98,27 +100,28 @@ h6 {
 /* Sections Header
 --------------------------------*/
 .section-header {
-  margin-bottom: 60px;
+  margin-bottom: 48px;
   position: relative;
-  padding-bottom: 20px;
+  padding-bottom: 16px;
 }
 
 .section-header::before {
   content: "";
   position: absolute;
   display: block;
-  width: 60px;
-  height: 5px;
+  width: 32px;
+  height: 2px;
   background: #f82249;
   bottom: 0;
-  left: calc(50% - 25px);
+  left: calc(50% - 16px);
 }
 
 .section-header h2 {
-  font-size: 36px;
+  font-size: 26px;
   text-transform: uppercase;
   text-align: center;
-  font-weight: 700;
+  font-weight: 600;
+  letter-spacing: 5px;
   margin-bottom: 10px;
 }
 
@@ -126,13 +129,13 @@ h6 {
   text-align: center;
   padding: 0;
   margin: 0;
-  font-size: 18px;
-  font-weight: 500;
+  font-size: 16px;
+  font-weight: 400;
   color: #9195a2;
 }
 
 .section-with-bg {
-  background-color: #f6f7fd;
+  background-color: #f9f9fb;
 }
 
 /*--------------------------------------------------------------
@@ -644,29 +647,24 @@ h6 {
 
 #hero .btn-tickets {
   background: #f82249;
-  font-size: 16px;
-  font-weight: 700;
-  padding: 15px 44px;
-  letter-spacing: 2px;
-  box-shadow: 0 0 22px rgba(248, 34, 73, 0.45);
-  animation: ticket-glow 2.2s ease-in-out infinite;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 14px 40px;
+  letter-spacing: 1.5px;
+  box-shadow: none;
+  animation: none;
 }
 
 #hero .btn-tickets i {
   margin-right: 8px;
-  font-size: 18px;
+  font-size: 16px;
   vertical-align: middle;
 }
 
 #hero .btn-tickets:hover {
   background: #d41840;
-  box-shadow: 0 0 36px rgba(248, 34, 73, 0.75);
-  transform: translateY(-2px);
-}
-
-@keyframes ticket-glow {
-  0%, 100% { box-shadow: 0 0 18px rgba(248, 34, 73, 0.4); }
-  50%       { box-shadow: 0 0 38px rgba(248, 34, 73, 0.75); }
+  box-shadow: none;
+  transform: translateY(-1px);
 }
 
 @-webkit-keyframes pulsate-btn {
@@ -702,7 +700,7 @@ h6 {
   overflow: hidden;
   position: relative;
   color: #fff;
-  padding: 60px 0 40px 0;
+  padding: 80px 0 60px 0;
 }
 
 @media (min-width: 1024px) {
@@ -722,29 +720,32 @@ h6 {
 }
 
 #about h2 {
-  font-size: 36px;
-  font-weight: bold;
-  margin-bottom: 10px;
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 16px;
   color: #fff;
+  letter-spacing: 1px;
 }
 
 #about h3 {
-  font-size: 18px;
-  font-weight: bold;
+  font-size: 13px;
+  font-weight: 600;
   text-transform: uppercase;
-  margin-bottom: 10px;
-  color: #fff;
+  letter-spacing: 3px;
+  margin-bottom: 12px;
+  color: rgba(255,255,255,0.6);
 }
 
 #about p {
-  font-size: 14px;
-  margin-bottom: 20px;
-  color: #fff;
+  font-size: 15px;
+  line-height: 1.8;
+  margin-bottom: 0;
+  color: rgba(255,255,255,0.85);
 }
 
 
 #committee {
-  padding: 60px 0 30px 0;
+  padding: 80px 0 40px 0;
 }
 
 #committee .speaker {
@@ -1019,9 +1020,9 @@ h6 {
 }
 
 #schedule .schedule-item {
-  border-bottom: 1px solid #cad4f6;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  border-bottom: 1px solid #eceef5;
+  padding-top: 18px;
+  padding-bottom: 18px;
   transition: background-color ease-in-out 0.3s;
 }
 
@@ -1073,7 +1074,7 @@ h6 {
 # Venue Section
 --------------------------------------------------------------*/
 #venue {
-  padding: 60px 0;
+  padding: 80px 0 0 0;
 }
 
 #venue .container-fluid {
@@ -1245,36 +1246,34 @@ h6 {
 # Sponsors Section
 --------------------------------------------------------------*/
 #supporters {
-  padding: 60px 0;
+  padding: 80px 0;
 }
 
 #supporters .supporters-wrap {
-  border-top: 1px solid #e0e5fa;
-  border-left: 1px solid #e0e5fa;
   margin-bottom: 30px;
 }
 
 #supporters .supporter-logo {
-  padding: 30px;
+  padding: 40px 30px;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-right: 1px solid #e0e5fa;
-  border-bottom: 1px solid #e0e5fa;
   overflow: hidden;
-  background: rgba(255, 255, 255, 0.5);
-  height: 160px;
+  background: #fff;
+  height: 140px;
 }
 
-#supporters .supporter-logo:hover img {
-  transform: scale(1.2);
+#supporters .supporter-logo:hover img,
+#supporters .supporter-logo:hover svg {
+  opacity: 0.75;
 }
 
-#supporters img {
-    max-height: 100px;
+#supporters img,
+#supporters svg {
+  max-height: 80px;
   max-width: 100%;
   object-fit: contain;
-  transition: all 0.4s ease-in-out;
+  transition: opacity 0.3s ease;
 }
 
 /*--------------------------------------------------------------
@@ -1421,14 +1420,15 @@ h6 {
 }
 
 #buy-tickets .card {
-  border: none;
-  border-radius: 5px;
+  border: 1px solid #ebebeb;
+  border-radius: 3px;
   transition: all 0.3s ease-in-out;
-  box-shadow: 0 10px 25px 0 rgba(6, 12, 34, 0.1);
+  box-shadow: none;
 }
 
 #buy-tickets .card:hover {
-  box-shadow: 0 10px 35px 0 rgba(6, 12, 34, 0.2);
+  box-shadow: 0 6px 20px rgba(6, 12, 34, 0.08);
+  border-color: transparent;
 }
 
 #buy-tickets .card hr {
@@ -1437,9 +1437,10 @@ h6 {
 
 #buy-tickets .card .card-title {
   margin: 10px 0;
-  font-size: 14px;
-  letter-spacing: 1px;
-  font-weight: bold;
+  font-size: 11px;
+  letter-spacing: 3px;
+  font-weight: 600;
+  color: #9195a2;
 }
 
 #buy-tickets .card .card-price {
@@ -1494,7 +1495,7 @@ h6 {
 # Contact Section
 --------------------------------------------------------------*/
 #contact {
-  padding: 60px 0;
+  padding: 80px 0;
 }
 
 #contact .contact-info {
@@ -1503,7 +1504,7 @@ h6 {
 }
 
 #contact .contact-info i {
-  font-size: 48px;
+  font-size: 36px;
   display: inline-block;
   margin-bottom: 10px;
   color: #f82249;
@@ -1516,11 +1517,12 @@ h6 {
 }
 
 #contact .contact-info h3 {
-  font-size: 18px;
-  margin-bottom: 15px;
-  font-weight: bold;
+  font-size: 11px;
+  margin-bottom: 10px;
+  font-weight: 600;
   text-transform: uppercase;
-  color: #112363;
+  letter-spacing: 3px;
+  color: #9195a2;
 }
 
 #contact .contact-info a {
